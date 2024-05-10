@@ -107,7 +107,7 @@ class Nodo {
       pos += 1;
     }
   
-    return {pos:npos, id: cnode, distance: distn,}
+    return {pos:npos, id: cnode, distance: distn,};
   
   }  
 
@@ -266,11 +266,11 @@ btnCNet.onclick = () => {
     drawNet(redAleatoria);
 
     const Nodos = document.querySelector('.nodos');
-      Nodos.innerText = `${numNodos} nodos`
+      Nodos.innerText = `${numNodos} nodos`;
 
     const Message = document.querySelector('.message');
     Message.innerText = `Red Generada`;
-}
+};
 
 
 // Función de callback para generar la ruta mínima
@@ -295,7 +295,7 @@ btnMinPath.onclick = () => {
   }
 
   const Tiempo = document.querySelector('.time');
-    Tiempo.innerText = `Tiempo total: ${Tiempo_total.toFixed(2)} segundos`
+    Tiempo.innerText = `Tiempo total: ${Tiempo_total.toFixed(2)} segundos`;
 
   // Pintamos los nodos de la ruta de color verde
   rutaMinimaConRetardos.forEach(nodo => {
@@ -311,4 +311,4 @@ btnMinPath.onclick = () => {
     ctx.fillText(nodoDesc, nodo.x, nodo.y + 5);
   });
   }
-}
+};
